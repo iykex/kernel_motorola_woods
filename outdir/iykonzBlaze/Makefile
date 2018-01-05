@@ -1,6 +1,6 @@
 NAME ?= Jennie.N7x_woods
 
-VERSION ?= 8.x
+VERSION ?= 7.x
 
 DATE := $(shell date +'%Y%m%d-%H%M')
 
