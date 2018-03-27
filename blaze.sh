@@ -49,10 +49,10 @@ fi
 zip_zak ()
 {
 echo -e "$cyan***********************************************"
-echo "          ZIpping Blaze™ Kernel...          "
+echo "          Zipping Blaze™ Kernel...          "
 echo -e "***********************************************$nocol"
 echo ""
-echo -e "$yellow Putting iykonzBlaze™ Kernel in Recovery Flashable Zip $nocol"
+echo -e "$yellow Putting Blaze™ Kernel in Recovery Flashable Zip $nocol"
 #using lazy kernel flasher
 cd outdir
 cd iykonzBlaze
@@ -63,7 +63,7 @@ cd iykonzBlaze
     else
     make
     mkdir -p out_done
-    cp Jennie.N7x_woods*zip* out_done
+    cp Jennie.O8x_woods*zip* out_done
     cd ../../
     sleep 0.6;
     echo ""
@@ -78,7 +78,7 @@ cd iykonzBlaze
     echo "          Uploading Blaze™ Kernel as zip...          "
     echo -e "***********************************************$nocol"
     echo ""
-    curl --upload-file outdir/iykonzBlaze/out_done/Jennie.N7x_woods*.zip https://transfer.sh/Jennie.N7x_woods_Nougat_$BUILD_START.zip
+    curl --upload-file outdir/iykonzBlaze/out_done/Jennie.O8x_woods*.zip https://transfer.sh/Jennie.O8x_woods_Oreo_$BUILD_START.zip
     echo ""
     echo ""
     echo " Uploading Done !!!"
