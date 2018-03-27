@@ -1,4 +1,4 @@
-NAME ?= Jennie.N7x_woods
+NAME ?= Jennie.O8x_woods
 
 VERSION ?= 7.x
 
@@ -6,7 +6,7 @@ DATE := $(shell date +'%Y%m%d-%H%M')
 
 ZIP := $(NAME)-$(VERSION)-$(DATE).zip
 
-EXCLUDE := Makefile README.md *.git* Jennie.N7x_woods*.zip *sha1
+EXCLUDE := Makefile README.md *.git* Jennie.O8x_woods*.zip *sha1
 
 all: $(ZIP)
 
