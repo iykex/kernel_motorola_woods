@@ -20,7 +20,8 @@ mkdir -p outdir
 export ARCH=arm
 export ARCH_MTK_PLATFORM=mt6735
 #export CROSS_COMPILE=~/arm-eabi-4.9/bin/arm-eabi-
-export CROSS_COMPILE=$PWD/arm-gnu-7.x/bin/arm-gnu-linux-androideabi-
+#export CROSS_COMPILE=$PWD/arm-gnu-7.x/bin/arm-gnu-linux-androideabi-
+export CROSS_COMPILE=$PWD/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-
 export KBUILD_BUILD_USER="izaqkull"
 export KBUILD_BUILD_HOST="OSX-Strec"
 
