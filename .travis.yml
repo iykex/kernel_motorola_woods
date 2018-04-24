@@ -1,0 +1,20 @@
+language: C
+dist: xenial
+
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt install -y build-essential kernel-package libncurses5-dev bzip2 curl
+  # Clone UberTc 4.8 toolchain. 
+  - git clone https://github.com/izaqKull/arm-eabi-4.9.git ~/arm-eabi-4.9/
+  
+  # make build script executable
+  - chmod +x blaze.sh
+  
+install: true
+
+script:
+  - ./blaze.sh
+  -
+
+after_success:
+- curl --upload-file outdir/iykonzBlaze/out_done/iykonzBlaze_woods*.zip https://transfer.sh/iykonzBlaze_woods_7.x_nouagt.zip
