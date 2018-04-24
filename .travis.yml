@@ -19,4 +19,4 @@ script:
   -
 
 after_success:
-- curl --upload-file outdir/iykonzBlaze/out_done/iykonzBlaze_woods*.zip https://transfer.sh/iykonzBlaze_woods_7.x_nouagt.zip
+- curl --upload-file outdir/iykonzBlaze/out_done/Jennie.N7x_woods*.zip https://transfer.sh/Jennie.N7x_woods_Nougat_$(shell date -u +"%Y%m%d_%H%M").zip
