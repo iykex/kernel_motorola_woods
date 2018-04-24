@@ -35,7 +35,7 @@ echo ""
 #woods defconfig
 make -C $PWD O=outdir ARCH=arm woods_defconfig
 #
-make -j16 -C $PWD O=outdir ARCH=arm
+make -j4 -C $PWD O=outdir ARCH=arm
 echo -e "$yellow Copying to outdir/iykonzBlaze $nocol"
 cp outdir/arch/arm/boot/zImage-dtb outdir/iykonzBlaze/Image
 
