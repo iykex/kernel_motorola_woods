@@ -13,7 +13,6 @@ before_install:
 install: true
 
 script:
-  - sudo -s
   - ./blaze.sh
   -
 
