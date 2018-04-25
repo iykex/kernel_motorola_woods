@@ -1,23 +1,12 @@
-<<<<<<< HEAD
 NAME ?= Jennie.O8x_woods
 
-VERSION ?= 7.x
-=======
-NAME ?= Jennie.N7x_woods
-
 VERSION ?= 8.x
->>>>>>> 7dffec264... custom flashable zip
 
 DATE := $(shell date +'%Y%m%d-%H%M')
 
 ZIP := $(NAME)-$(VERSION)-$(DATE).zip
 
-<<<<<<< HEAD
 EXCLUDE := Makefile README.md *.git* Jennie.O8x_woods*.zip *sha1
-=======
-EXCLUDE := Makefile README.md *.git* Jennie.N7x_woods*.zip *sha1
->>>>>>> 7dffec264... custom flashable zip
-
 all: $(ZIP)
 
 $(ZIP):
