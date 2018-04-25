@@ -35,7 +35,7 @@ echo ""
 #woods defconfig
 make -C $PWD O=outdir ARCH=arm woods_defconfig
 #
-make -j128 -C $PWD O=outdir ARCH=arm
+make -j4 -C $PWD O=outdir ARCH=arm
 echo -e "$yellow Copying to outdir/iykonzBlaze $nocol"
 cp outdir/arch/arm/boot/zImage-dtb outdir/iykonzBlaze/Image
 
@@ -87,9 +87,20 @@ cd iykonzBlaze
     BUILD_END=$(date +"%s")
     DIFF=$(($BUILD_END - $BUILD_START))
     echo -e "$yellow Build completed in $(($DIFF / 60)) minute(s) and $(($DIFF % 60)) seconds.$n"
-    exit 1
+    #exit 1
     fi
 }
+
+close_me ()
+{
+printf '\e[8;33;80t]'
+clear
+ cecho C "" "Talent Is Nothing WIthout Ethics!!!"
+ sleep 1.0;
+ clear
+exit
+}
+
 case $1 in
 clean)
 #make ARCH=arm -j16 clean mrproper
@@ -98,6 +109,6 @@ rm -rf include/linux/autoconf.h
 *)
 compile_kernel
 zip_zak
-exit
+close_me
 ;;
 esac
