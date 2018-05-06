@@ -125,7 +125,7 @@ echo  "$green▄   █ ▄▄  █    ████▄ ██   ██▄   ▄�
     BUILD_END=$(date +"%s")
     DIFF=$(($BUILD_END - $BUILD_START))
     echo "$yellow Build completed in $(($DIFF / 60)) minute(s) and $(($DIFF % 60)) seconds.$n"
-    sleep 3.0;
+    sleep 15.0;
     echo ""
     echo ""
 echo "$green·▄▄▄▄      ▐ ▄▄▄▄ .
