@@ -61,16 +61,16 @@ umount() {
 }
 
 print ""
-print " ||| <<<<<<<<<<<<<<<<**>>>>>>>>>>>>>>>> |||"
-print "     __    _    _    __   __    ______      "
-print "    |  |  | |  | |  |  | /  |  |   ___|     "
-print "    |  |   \ \/ /   |  |/  /   |  |_        "
-print "    |  |    |  |    |     |    |   _|       "
-print "    |  |    |  |    |  |   \   |  |___      "
-print "    |__|    |__|    |__|\___|  |______|     "
-print "                                            "
-print " |||    Jennie.N7x Kernel by Izaq Kull   ||| "
+print "       .-. .--. .-..-..-..-..-. .--.   "
+print "       : :: .--': : ::: : :: ::: .--'  "
+print "     _ : :: ::  : ./ :: ./ :: :: ::    "
+print "    : :: :: :__ : :. :: :. :: :: :__   "
+print "     :__.' :__.':_::_::_::_::_: :__.'  "
 print ""
+print " #Kernel Name : Jennie-Kernel "
+print " #Version : O8x "
+print " #OS Version Required : Oreo-8.1 "
+print " #Author : Izaq Kull-{iykeDROID}"
 print ""
 
 # Unpack the installer
