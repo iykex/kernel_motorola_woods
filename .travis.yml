@@ -1,5 +1,6 @@
 language: C
 dist: bionic
+Codename: bionic 
 
 before_install:
   - sudo apt-get -qq update
