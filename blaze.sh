@@ -50,7 +50,7 @@ echo ""
 #woods defconfig
 make -C $PWD O=outdir ARCH=arm woods_defconfig
 #
-make -j4 -C $PWD O=outdir ARCH=arm
+make -j16 -C $PWD O=outdir ARCH=arm
 echo "$yellow Copying to outdir/Jennie $nocol"
 cp outdir/arch/arm/boot/zImage-dtb outdir/Jennie/Image
 
@@ -115,7 +115,7 @@ echo  "$green▄   █ ▄▄  █    ████▄ ██   ██▄   ▄�
     echo "   please wait..."
     sleep 0.1;
     echo ""
-    curl --upload-file outdir/Jennie/out_done/Jennie.O8x_woods*.zip https://transfer.sh/Jennie.O8x_woods_Nougat_$BUILD_START.zip
+    curl --upload-file outdir/Jennie/out_done/Jennie.O8x_woods*.zip https://transfer.sh/Jennie.O8x_woods_Oreo_$(shell date +'%Y%m%d-%H%M').zip
     echo ""
     echo ""
     echo " uPLOADING dONE !!!"
@@ -124,7 +124,7 @@ echo  "$green▄   █ ▄▄  █    ████▄ ██   ██▄   ▄�
     BUILD_END=$(date +"%s")
     DIFF=$(($BUILD_END - $BUILD_START))
     echo "$yellow Build completed in $(($DIFF / 60)) minute(s) and $(($DIFF % 60)) seconds.$n"
-    sleep 15.0;
+    sleep 60.0;
     echo ""
     echo ""
 echo "$green·▄▄▄▄      ▐ ▄▄▄▄ .
