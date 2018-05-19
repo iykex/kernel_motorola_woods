@@ -115,7 +115,8 @@ echo  "$green▄   █ ▄▄  █    ████▄ ██   ██▄   ▄�
     echo "   please wait..."
     sleep 0.1;
     echo ""
-    curl --upload-file outdir/Jennie/out_done/Jennie.O8x_woods*.zip https://transfer.sh/Jennie.O8x_woods_Oreo_$(shell date +'%Y%m%d-%H%M').zip
+   # STAMP=$(shell date +'%Y%m%d-%H%M')
+    curl --upload-file outdir/Jennie/out_done/Jennie.O8x_woods*.zip https://transfer.sh/Jennie.O8x_woods_Oreo_$(date +'%Y%m%d-%H%M').zip
     echo ""
     echo ""
     echo " uPLOADING dONE !!!"
