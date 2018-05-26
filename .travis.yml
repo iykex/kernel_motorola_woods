@@ -1,6 +1,7 @@
 language: C
-dist: bionic
-Codename: bionic 
+dist: artful
+#dist: ubuntu
+#Codename: bionic 
 
 before_install:
   - sudo apt-get -qq update
